@@ -150,11 +150,11 @@ public class Game {
      */
     public String checkGameWinner(char [][]grid) {
         if (checkPlayer(grid, 'x')) { // if player 'x' gets true for a complete row
-            return "X wins";
+            return "X wins!";
         } else if (checkPlayer(grid, 'o')) { // if 'o' gets true for a complete row
-            return "O wins";
+            return "\u2764 wins!";
         } else if (freeSpots == 0) { // if every space is filled and there is still no winner, it's a tie:
-            return "Tie";
+            return "It's a tie!";
         } else { // No winner yet
             return "None";
         }
